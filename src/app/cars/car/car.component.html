@@ -1,0 +1,11 @@
+<div class='row'>
+  <div class="card col-4" *ngFor="let car of cars">
+    <img class="card-img-top" [src]="car.imageUrl" alt="">
+    <div class="card-body">
+      <h4 class="card-title">{{car.make}}</h4>
+      <p class="card-text">{{car.model}}</p>
+      <p>{{car.price}}</p>
+      <button class="btn btn-success" (click)="Bid(car)">Bid</button>
+    </div>
+  </div>
+</div>
